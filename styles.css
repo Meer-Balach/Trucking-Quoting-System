@@ -1,0 +1,303 @@
+/* ═══════════════════════════════════════════════════════════════
+   BN DULAY TRUX - QUOTE SYSTEM STYLESHEET
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f4f6f8;
+  font-family: 'Poppins', sans-serif;
+}
+
+#bnd-quote-app {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  color: #333333 !important;
+  max-width: 950px !important;
+  margin: 20px auto !important;
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  line-height: 1.5 !important;
+}
+
+#bnd-quote-app * {
+  box-sizing: border-box !important;
+}
+
+#bnd-quote-app .hidden {
+  display: none !important;
+}
+
+/* HEADER */
+#bnd-quote-app .header {
+  background: linear-gradient(135deg, #1B5D8B 0%, #256628 100%) !important;
+  color: #ffffff !important;
+  padding: 35px 20px !important;
+  text-align: center !important;
+}
+
+#bnd-quote-app .header h1 {
+  font-family: 'Barlow Condensed', sans-serif !important;
+  font-size: 2.5rem !important;
+  letter-spacing: 2px !important;
+  margin: 0 0 5px 0 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+#bnd-quote-app .header .tagline {
+  opacity: 0.95 !important;
+  font-size: 1rem !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+}
+
+/* FORM BODY */
+#bnd-quote-app .quote-forms {
+  padding: 35px 30px !important;
+}
+
+#bnd-quote-app .quote-form-tier h2 {
+  color: #1B5D8B !important;
+  font-family: 'Barlow Condensed', sans-serif !important;
+  font-size: 2rem !important;
+  margin: 0 0 5px 0 !important;
+  font-weight: 700 !important;
+}
+
+#bnd-quote-app .form-hint {
+  color: #666666 !important;
+  margin-bottom: 25px !important;
+  font-size: 0.95rem !important;
+}
+
+#bnd-quote-app .quote-form-tier h3 {
+  color: #1B5D8B !important;
+  margin: 25px 0 12px 0 !important;
+  font-family: 'Barlow Condensed', sans-serif !important;
+  font-size: 1.3rem !important;
+  letter-spacing: 1px !important;
+  border-bottom: 2px solid #f0f0f0 !important;
+  padding-bottom: 5px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+/* GRID & INPUTS */
+#bnd-quote-app .form-row {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+#bnd-quote-app .form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-bottom: 15px !important;
+}
+
+#bnd-quote-app .form-group label {
+  font-weight: 600 !important;
+  margin-bottom: 6px !important;
+  color: #444444 !important;
+  font-size: 0.95rem !important;
+}
+
+#bnd-quote-app .form-group input,
+#bnd-quote-app .form-group select,
+#bnd-quote-app .form-group textarea {
+  width: 100% !important;
+  padding: 10px 12px !important;
+  border: 2px solid #ddd !important;
+  border-radius: 6px !important;
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+  background: #ffffff !important;
+  color: #333333 !important;
+}
+
+#bnd-quote-app .form-group input:focus,
+#bnd-quote-app .form-group select:focus,
+#bnd-quote-app .form-group textarea:focus {
+  outline: none !important;
+  border-color: #1B5D8B !important;
+}
+
+#bnd-quote-app .form-group textarea {
+  resize: vertical !important;
+  min-height: 80px !important;
+}
+
+#bnd-quote-app .hint {
+  font-size: 0.8rem !important;
+  color: #888888 !important;
+  margin-top: 4px !important;
+  font-style: italic !important;
+}
+
+#bnd-quote-app .oversized-inline {
+  width: 100% !important;
+  padding: 10px !important;
+  border: 1px dashed #ffb300 !important;
+  border-radius: 6px !important;
+  background: #fff8e1 !important;
+  font-size: 0.88rem !important;
+  font-family: inherit !important;
+  min-height: 55px !important;
+  color: #5d4037 !important;
+}
+
+/* DISCLAIMER */
+#bnd-quote-app .rate-notice {
+  background: #fff8e1 !important;
+  border-left: 4px solid #ffb300 !important;
+  padding: 14px 16px !important;
+  border-radius: 8px !important;
+  margin: 20px 0 !important;
+  font-size: 0.9rem !important;
+  color: #6d4c00 !important;
+  line-height: 1.5 !important;
+}
+
+/* BUTTONS */
+#bnd-quote-app .btn-primary {
+  background: #1B5D8B !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 14px 24px !important;
+  border-radius: 6px !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+  font-family: inherit !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+#bnd-quote-app .btn-primary:hover {
+  background: #256628 !important;
+}
+
+#bnd-quote-app .btn-secondary {
+  background: #dddddd !important;
+  color: #333333 !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  border-radius: 6px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  font-family: inherit !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+#bnd-quote-app .btn-secondary:hover {
+  background: #cccccc !important;
+}
+
+/* CUSTOM QUOTE CALLOUT */
+#bnd-quote-app .custom-quote-section {
+  background: linear-gradient(135deg, rgba(240, 147, 251, 0.08), rgba(245, 87, 108, 0.08)) !important;
+  border-top: 3px dashed #f5576c !important;
+  padding: 30px 20px !important;
+  text-align: center !important;
+  margin-top: 30px !important;
+  border-radius: 12px !important;
+}
+
+#bnd-quote-app .best-rates-badge {
+  display: inline-block !important;
+  background: #256628 !important;
+  color: #ffffff !important;
+  padding: 6px 15px !important;
+  border-radius: 20px !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+}
+
+#bnd-quote-app .custom-quote-section h3 {
+  color: #333333 !important;
+  font-size: 1.3rem !important;
+  margin-bottom: 10px !important;
+  border: none !important;
+}
+
+#bnd-quote-app .custom-quote-section p {
+  color: #555555 !important;
+  margin-bottom: 20px !important;
+}
+
+#bnd-quote-app .contact-buttons {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  flex-wrap: wrap !important;
+}
+
+#bnd-quote-app .contact-btn {
+  background: #ffffff !important;
+  padding: 12px 22px !important;
+  border-radius: 10px !important;
+  border: 1px solid #e0e0e0 !important;
+  text-decoration: none !important;
+  color: #333333 !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05) !important;
+}
+
+#bnd-quote-app .contact-btn:hover {
+  border-color: #1B5D8B !important;
+  color: #1B5D8B !important;
+}
+
+/* RESULTS DRAWER */
+#bnd-quote-app .quote-result {
+  padding: 30px !important;
+  background: #f9f9f9 !important;
+  border-top: 4px solid #1B5D8B !important;
+}
+
+#bnd-quote-app .quote-result h2 {
+  color: #1B5D8B !important;
+  margin-bottom: 20px !important;
+  font-family: 'Barlow Condensed', sans-serif !important;
+  font-size: 1.8rem !important;
+}
+
+#bnd-quote-app #quote-details {
+  background: #ffffff !important;
+  padding: 20px !important;
+  border-radius: 8px !important;
+  margin-bottom: 20px !important;
+  font-family: 'Courier New', monospace !important;
+  white-space: pre-wrap !important;
+  line-height: 1.6 !important;
+  font-size: 0.85rem !important;
+  border: 1px solid #eeeeee !important;
+  overflow-x: auto !important;
+  color: #222222 !important;
+}
+
+#bnd-quote-app .quote-actions {
+  display: flex !important;
+  gap: 12px !important;
+}
+
+@media (max-width: 600px) {
+  #bnd-quote-app .form-row,
+  #bnd-quote-app .contact-buttons,
+  #bnd-quote-app .quote-actions {
+    grid-template-columns: 1fr !important;
+    flex-direction: column !important;
+  }
+}
