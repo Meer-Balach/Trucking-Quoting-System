@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BN Dulay Trux - Instant Delivery Quote</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- WRAPPER ID THAT CONNECTS CSS TO HTML -->
+  <div id="bnd-quote-app">
+    <div class="container">
+      
+      <!-- HEADER -->
+      <header class="header">
+        <h1>BN DULAY TRUX</h1>
+        <p class="tagline">Instant Delivery Quote System</p>
+      </header>
+
+      <!-- QUOTE FORM -->
+      <div id="quote-forms" class="quote-forms">
+
+        <div id="local-form" class="quote-form-tier">
+          <h2>🚚 Delivery Quote</h2>
+          <p class="form-hint">Lower Mainland BC — Instant pricing</p>
+          
+          <form id="local-quote-form">
+            <h3>Contact Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email *</label>
+                <input type="email" name="email" required placeholder="you@example.com">
+              </div>
+              <div class="form-group">
+                <label>Phone *</label>
+                <input type="tel" name="phone" required placeholder="(604) 555-1234">
+              </div>
+            </div>
+            
+            <h3>Route</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Pickup City *</label>
+                <select name="pickup_city" required>
+                  <option value="">-- Select Pickup City --</option>
+                  <option value="Abbotsford">Abbotsford</option>
+                  <option value="Aldergrove">Aldergrove</option>
+                  <option value="Burnaby">Burnaby</option>
+                  <option value="Chilliwack">Chilliwack</option>
+                  <option value="Coquitlam">Coquitlam</option>
+                  <option value="Delta">Delta</option>
+                  <option value="Langley">Langley</option>
+                  <option value="Maple Ridge">Maple Ridge</option>
+                  <option value="Mission">Mission</option>
+                  <option value="New Westminster">New Westminster</option>
+                  <option value="North Vancouver">North Vancouver</option>
+                  <option value="Richmond">Richmond</option>
+                  <option value="Rosedale">Rosedale</option>
+                  <option value="Surrey">Surrey</option>
+                  <option value="Vancouver">Vancouver</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Delivery City *</label>
+                <select name="delivery_city" required>
+                  <option value="">-- Select Delivery City --</option>
+                  <option value="Abbotsford">Abbotsford</option>
+                  <option value="Aldergrove">Aldergrove</option>
+                  <option value="Burnaby">Burnaby</option>
+                  <option value="Chilliwack">Chilliwack</option>
+                  <option value="Coquitlam">Coquitlam</option>
+                  <option value="Delta">Delta</option>
+                  <option value="Langley">Langley</option>
+                  <option value="Maple Ridge">Maple Ridge</option>
+                  <option value="Mission">Mission</option>
+                  <option value="New Westminster">New Westminster</option>
+                  <option value="North Vancouver">North Vancouver</option>
+                  <option value="Richmond">Richmond</option>
+                  <option value="Rosedale">Rosedale</option>
+                  <option value="Surrey">Surrey</option>
+                  <option value="Vancouver">Vancouver</option>
+                </select>
+              </div>
+            </div>
+            
+            <h3>Shipment</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Weight (lbs) *</label>
+                <input type="number" name="weight" min="1" required placeholder="500">
+              </div>
+              <div class="form-group">
+                <label>Number of Pieces/Pallets (4x4 or less) *</label>
+                <input type="number" name="pieces" min="1" required placeholder="1">
+              </div>
+            </div>
+            
+            <div class="form-group oversized-group">
+              <textarea name="oversized_info" rows="2" placeholder="If over 4x4, describe size & quantity (e.g., 2 pallets 6x4x5)" class="oversized-inline"></textarea>
+              <small class="hint">⚠️ Anything larger than 4x4 requires a custom quote</small>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label>Truck Type *</label>
+                <select name="truck_type" required>
+                  <option value="">-- Select Truck Type --</option>
+                  <option value="5_ton">5 Ton Truck (max 15,000 lbs)</option>
+                  <option value="10_ton">10 Ton Truck (max 28,000 lbs)</option>
+                  <option value="tandem">Flatdeck Tandem (max 48,000 lbs)</option>
+                  <option value="tridem">Flatdeck Tridem (max 60,000 lbs)</option>
+                  <option value="super_b">Flatdeck Super B (max 85,000 lbs)</option>
+                  <option value="chassis">Chassis (Custom Quote)</option>
+                  <option value="curtain_van">Curtain Van (Custom Quote)</option>
+                  <option value="dry_van">Dry Van (Custom Quote)</option>
+                  <option value="rolltite">Rolltite / Conestoga (Custom Quote)</option>
+                  <option value="not_sure">Not Sure - Let BND Recommend</option>
+                </select>
+                <small class="hint">Choose the truck type that best fits your load</small>
+              </div>
+            </div>
+            
+            <h3>Additional Information</h3>
+            <div class="form-group">
+              <label>Special Requests or Notes</label>
+              <textarea name="additional" rows="3" placeholder="Tell us anything else that will help us serve you better — special handling, timing, access notes, etc."></textarea>
+            </div>
+            
+            <!-- AUTOMATED RATE DISCLAIMER -->
+            <div class="rate-notice">
+              🤖 <strong>Automated Estimate Notice:</strong> These rates are automatically generated and may be inaccurate. Final pricing is subject to verification by our dispatch team. Rates are valid for <strong>24 hours</strong> from time of quote.
+            </div>
+            
+            <button type="submit" class="btn-primary btn-large">Get Instant Quote</button>
+          </form>
+          
+          <!-- CUSTOM QUOTE SECTION -->
+          <div class="custom-quote-section">
+            <div class="best-rates-badge">💰 BEST RATES GUARANTEED</div>
+            <h3>Need a Custom Quote or More Information?</h3>
+            <p>For custom quotes, specialized loads, oversized pallets, or additional information, call or email us directly for the best rates!</p>
+            
+            <div class="contact-buttons">
+              <a href="mailto:dispatch@bndulaytrux.com" class="contact-btn">
+                📧 dispatch@bndulaytrux.com
+              </a>
+              <a href="tel:+16045888760" class="contact-btn">
+                📞 604-588-8760
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- QUOTE RESULT -->
+      <div id="quote-result" class="quote-result hidden">
+        <h2>📋 Your Quote</h2>
+        <div id="quote-details"></div>
+        <div class="quote-actions">
+          <button id="email-quote-btn" class="btn-primary">📧 Email Me This Quote</button>
+          <button id="new-quote-btn" class="btn-secondary">🔄 New Quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="rates.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
